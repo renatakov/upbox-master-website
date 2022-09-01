@@ -1,0 +1,63 @@
+@import url(/css/first-styles.css);
+@import url(/css/font-styles.css);
+
+
+/* navigation section */
+/* ------------------------ */
+
+
+.navigation {
+  background: url('/images/TOPBAR\ 1.png') no-repeat 50% 0%;
+  background-size: 100% ;
+  display: flex;
+  font-family: 'DM Sans Medium';
+  align-items: center;
+  padding: 1.25rem 8rem;
+  justify-content: space-between;
+}
+.navigation__logo {
+  max-width: 70%;
+}
+.menu__list {
+  display: flex;
+  align-items: center;
+}
+.list__li {
+  padding: 0 40px;
+}
+.list__li a{
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  letter-spacing: 0.16em;
+  color: #000;
+  text-transform: uppercase;
+}
+.list__li a:hover{
+  color: rgb(255, 130, 192);
+}
+.menu__button {
+  font-family: 'DM Sans Bold';
+  font-size: 24px;
+  line-height: 130%;
+letter-spacing: 0.12em;
+text-transform: uppercase;
+padding: 10px 30px;
+color: #000000;
+border: 2px solid #4A4A4A;
+border-radius: 300px;
+background: none;
+}
+
+.menu__button:hover{
+  transform: scale(1.2);
+}
+input{
+  visibility: hidden;
+}
+
+@media (min-width: 375px) and (max-width: 450px) {
+  .menu__list{
+    display: none;
+  }
+}
