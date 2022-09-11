@@ -73,26 +73,6 @@ input{
   background-color: rgb(0, 0, 0);
 }
 
-/* .menu__burger span:last-child {
-  transform-origin: center right;
-
-}
-.menu__burger span:nth-child(2) {
-  transform-origin: center center;
-} */
-
-
-.menu__burger > input:checked  ~ span:last-child{
-
-  transform: rotate(35deg);
-}
-.menu__burger > input:checked  ~ span:nth-child(2){
-  transform: rotate(-35deg);
-
-}
-.menu__burger > input:checked  ~ span:nth-child(3){
-  display: none;
-}
 
 
 @media (min-width: 375px) and (max-width: 450px) {
@@ -131,6 +111,7 @@ input{
   flex: 0 1 50%;
   padding: 1.25rem 0px;
 }
+
 .hero__leftside {
   display: flex;
   flex-flow: row wrap;
@@ -141,7 +122,7 @@ input{
 .leftside__h3 {
   font-family: 'DM Serif Display';
 font-weight: 900;
-font-size: 48px;
+font-size: 58px;
 line-height: 117%;
 color: #000000;
 margin-bottom: 1.25rem;
@@ -164,7 +145,7 @@ animation: h3 1s ease-out .3s;
   font-family: 'DM Sans Regular';
 font-style: normal;
 font-weight: 400;
-font-size: 18px;
+font-size: 28px;
 line-height: 180%;
 letter-spacing: 0.01em;
 margin-bottom: 1.25rem;
@@ -178,8 +159,19 @@ animation: h3 1s ease-out .4s;
   border: 4px solid #EF8094;
   border-radius: 300px;
 animation: button 1s ease-out .5s;
+}
+
+.leftside__button:hover{
+  transition: all ease-out 500ms;
+  background-color: rgb(236, 121, 190);
+}
+.leftside__button a:hover{
+  transition: all ease-out 500ms;
+
+  color: #fff;
 
 }
+
 @keyframes button {
   0%{
     transform: translateY(50px);
@@ -196,7 +188,7 @@ animation: button 1s ease-out .5s;
 .leftside__button a{
   font-family: 'DM Sans Bold';
   font-weight: 700;
-  font-size: 20px;
+  font-size: 30px;
   line-height: 160%;
   letter-spacing: 0.12em;
 
@@ -210,6 +202,8 @@ color: #000000;
   perspective: 400px;
 }
 .picture__img {
+  max-width: 100%;
+
   animation: picture 1s ease-out;
   background: url('/images/bag.png') no-repeat 55% 20%, url('/images/face1.png') no-repeat 60% 10%,
   url('/images/face2.png') no-repeat 60% 18%,url('/images/gloss.png') no-repeat 50% 0%,
@@ -231,3 +225,412 @@ color: #000000;
     transform: translate3d(0px, 0px, 0px);
   }
 }
+
+
+  @media (min-width: 375px) and (max-width: 450px) {
+    .hero{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  background: #F5F8FF;
+
+
+}
+
+.hero__rightside{
+  display: none;
+}
+
+.hero__leftside{
+  padding: 0;
+  margin: 20px;
+}
+
+.leftside__h3{
+  font-size: 50px;
+
+}
+.leftside__p{
+  font-size: 20px;
+  line-height: 150%;
+}
+.leftside__button a{
+  font-size: 20px;
+
+}
+  }
+
+  /* ------------------------ */
+  /* pricing section */
+  /* ------------------------ */
+
+  .pricing {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+  }
+  .pricing__title {
+  font-family: 'DM Sans Medium';
+  background: url('/images/underline.png') no-repeat 50% 100%;
+  padding: 13px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 130%;
+  color: #000000;
+  }
+
+  .pricing__plans {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.8rem;
+
+  }
+  .pricing__plan-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 3px solid rgba(98, 94, 94, 0.3);
+    border-radius: 6px;
+    padding: 3rem 10rem;
+    background: url('/images/Vector.png') no-repeat;
+  }
+  .plan-1__subtitle {
+    font-family: 'DM Sans Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 130%;
+  color: #000000;
+  }
+  .plan-1__price {
+    font-family: 'DM Sans Regular';
+font-style: normal;
+font-weight: 400;
+font-size: 44px;
+line-height: 57px;
+text-align: center;
+letter-spacing: 0.12em;
+
+color: #000000;
+  }
+  .plan-1__button {
+    background: #EF8094;
+border: 4px solid #EF8094;
+border-radius: 300px;
+font-family: 'DM Sans Regular';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 120%;
+text-align: center;
+letter-spacing: 0.12em;
+padding: 0.9rem 2rem;
+color: #FFFFFF;
+  }
+  .pricing__plan-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 3px solid rgba(98, 94, 94, 0.3);
+    border-radius: 6px;
+    padding: 3rem 10rem;
+    background: url('/images/Vector 2.png') no-repeat;
+    margin-left: 2rem;
+  }
+  .plan-2__subtitle {
+    font-family: 'DM Sans Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+    color: #000000;
+  }
+  .plan-2__price {
+    font-family: 'DM Sans Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: 0.12em;
+
+    color: #000000;
+  }
+  .plan-2__button {
+    background: #EF8094;
+    border: 4px solid #EF8094;
+    border-radius: 300px;
+    font-family: 'DM Sans Regular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.12em;
+    padding: 0.9rem 2rem;
+    color: #FFFFFF;
+  }
+  .pricing__text {
+    font-family: 'DM Sans Regular';
+font-size: 18px;
+line-height: 23px;
+letter-spacing: 0.01em;
+margin: 1.25rem;
+color: #000000;
+  }
+
+  .plan-1__button:hover,
+  .plan-2__button:hover{
+    transform: scale(1.13);
+    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  @media (min-width: 375px) and (max-width: 450px) {
+    .pricing{
+      display: flex;
+      flex-direction: column;
+    }
+    .pricing__plans{
+      display: flex;
+      flex-direction: column;
+    }
+    .pricing__plan-1,
+    .pricing__plan-2{
+      padding: 3rem 8rem;
+
+    }
+    .pricing__plan-2{
+      margin-left: 0;
+      margin-top: 1rem;
+    }
+
+    .plan-1__button,
+    .plan-2__button{
+      font-size: 15px;
+      line-height: 100%;
+      text-align: center;
+      letter-spacing: 0.12em;
+      padding: 0.6rem 1.24rem;
+    }
+  }
+
+  /* ------------------- */
+  /* work-steps section */
+  /* ------------------ */
+
+  .work-steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .work-steps__title {
+    font-family: 'DM Sans Medium';
+    background: url('/images/underline.png') no-repeat 50% 100%;
+    padding: 13px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 130%;
+    color: #000000;
+  }
+  .work-steps__item-1 {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .item-1__step {
+    color: #EF8094;
+    font-size: 100px;
+  }
+  .item-1__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 0 1 40%;
+  }
+  .item-2__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 0 1 50%;
+  }
+  .item-3__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 0 1 40%;
+  }
+
+  .item-1__subtitle {
+font-family: 'DM Sans Regular';
+font-style: normal;
+font-weight: 600;
+font-size: 36px;
+line-height: 44px;
+/* or 122% */
+
+
+color: #000000;
+
+  }
+  .item-1__subtext {
+    font-family: 'DM Sans Regular';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 23px;
+letter-spacing: 0.01em;
+
+color: #000000;
+  }
+  .work-steps__item-2 {
+    display: flex;
+    flex-flow: row wrap;
+    align-self:  end;
+    margin-top: 40px;
+  }
+  .item-2__step {
+    color: #EF8094;
+    font-size: 100px;
+  }
+  .item-2__subtitle {
+text-indent: 30px;
+    font-family: 'DM Sans Regular';
+font-style: normal;
+font-weight: 600;
+font-size: 36px;
+line-height: 44px;
+color: #000000;
+  }
+  .item-2__subtext {
+    font-family: 'DM Sans Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+
+    color: #000000;
+  }
+  .work-steps__item-3 {
+    display: flex;
+    flex-flow: row wrap;
+    align-self:  center;
+    margin-top: 60px;
+  }
+
+  .item-3__step {
+    color: #EF8094;
+    font-size: 100px;
+  }
+  .item-3__subtitle {
+    font-family: 'DM Sans Regular';
+font-style: normal;
+font-weight: 600;
+font-size: 36px;
+line-height: 44px;
+color: #000000;
+  }
+  .item-3__subtext {
+    font-family: 'DM Sans Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+
+    color: #000000;
+  }
+  .work-steps__button {
+    padding: 0.625rem 1.875rem;
+    background-color: #fff;
+    border: 4px solid #EF8094;
+    border-radius: 300px;
+    margin-bottom: 30px;
+  }
+  .work-steps__button:hover{
+    transition: all ease-out 500ms;
+    background-color: rgb(236, 121, 190);
+  }
+  .work-steps__button a:hover{
+    transition: all ease-out 500ms;
+
+    color: #fff;
+
+  }
+
+  .work-steps__button a{
+    font-family: 'DM Sans Bold';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 160%;
+    letter-spacing: 0.12em;
+
+  color: #000000;
+  }
+  .work-steps__button a::after{
+    content: '>';
+    padding: 5px;
+  }
+
+  @media (min-width: 375px) and (max-width: 450px) {
+    .work-steps{
+      margin: 2rem;
+    }
+    .work-steps__item-1 {
+      display: flex;
+      flex-flow: row wrap;
+    }
+    .item-1__step {
+      color: #EF8094;
+      font-size: 100px;
+    }
+    .item-1__text{
+      flex: 1 1 50%;
+    }
+    .item-2__text{
+      flex: 1 1 50%;
+    }
+    .item-3__text{
+      flex: 1 1 50%;
+    }
+    .work-steps__item-1,
+    .work-steps__item-2,
+    .work-steps__item-3{
+      margin: 2rem;
+    }
+    .item-1__subtext,
+    .item-2__subtext,
+    .item-3__subtext{
+      padding: 10px;
+    }
+    .item-1__subtitle,
+    .item-2__subtitle,
+    .item-3__subtitle{
+      padding: 10px;
+      font-size: 30px;
+    }
+    .item-2__subtitle{
+text-align: center;
+font-size: 40px;
+text-indent: 0px;
+    }
+    .work-steps__item-2{
+      justify-content: space-around;
+    }
+    .item-2__subtext{
+      margin: 0;
+      padding: 0 0 0 30px;
+    }
+    .work-steps__button a{
+      font-size: 18px;
+    }
+  }
