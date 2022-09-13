@@ -398,13 +398,16 @@ color: #000000;
       display: flex;
       flex-direction: column;
     }
+    .pricing__title {
+      font-size: 40px;
+    }
     .pricing__plans{
       display: flex;
       flex-direction: column;
     }
     .pricing__plan-1,
     .pricing__plan-2{
-      padding: 3rem 8rem;
+      padding: 3rem 6rem;
 
     }
     .pricing__plan-2{
@@ -585,10 +588,16 @@ color: #000000;
     .work-steps{
       margin: 2rem;
     }
+
+    .work-steps__title {
+      font-size: 45px;
+    }
+
     .work-steps__item-1 {
       display: flex;
       flex-flow: row wrap;
     }
+
     .item-1__step {
       color: #EF8094;
       font-size: 100px;
@@ -605,7 +614,7 @@ color: #000000;
     .work-steps__item-1,
     .work-steps__item-2,
     .work-steps__item-3{
-      margin: 2rem;
+      margin: 2rem 1rem;
     }
     .item-1__subtext,
     .item-2__subtext,
@@ -840,12 +849,11 @@ margin-left: 1.25rem;
     .main__logo {
       display: flex;
       align-items: center;
-      margin: 1.25rem;
+      margin: 1.25rem .4rem;
     }
     .main__icons {
       display: flex;
       margin: 1.25rem 0;
-
       align-items: center;
       justify-content: center;
     }
